@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 
 //connect to mongodb
 
-const dbURI = 'mongodb+srv://janice:janice123@nodetuts.7enuo.mongodb.net/node-tuts?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://<user.name>:<password>@<mongodbURI>';
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(result => {
         app.listen(3000);
